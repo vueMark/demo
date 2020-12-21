@@ -11,6 +11,6 @@ public class HelloRestController {
     @GetMapping("/rest")
     public Greeting greet(@RequestParam(required = false,
             defaultValue = "World") String name){
-        return new Greeting("Hello " + name + "!");
+        return new Greeting("Hello, " + name + "!");
     }
 }
